@@ -1,0 +1,138 @@
+/* banner */
+
+.banner{
+   margin-top: -70px; 
+}
+
+.banner_title{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -100px;
+    right: -10%;
+    background-color:var(--blockColor);
+}
+
+
+.banner_title > h2{
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: var(--bgColor);
+
+}
+
+/*  section product_cotainer  */
+
+#product{
+    margin-top: 100px;
+}
+
+.cotainer{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.row{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.item{
+    width: calc(100% / 4 - 30px);
+    margin: 15px;
+}
+
+
+.text{
+    margin: 0px 4px;
+}
+
+h3{
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top:  1px solid var(--mainColor);
+    border-bottom:  1px solid var(--mainColor);
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--mainColor);
+}
+
+.text li{
+    padding: 4px 0px;
+    font-size: 14px;
+    color:var(--pColor);
+}
+
+.more_pic{
+    margin: 20px 0 4px 4px;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+}
+
+.page_btn{
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.page_btn a{
+    margin: 0 auto;
+    color: var(--mainColor);
+    font-size: 17px;
+}
+
+@media screen and (max-width:768px) {
+
+    .banner{
+        margin-top: -15px; 
+    }
+
+    .banner_title{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
+        margin-top: -150px;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        background-color:transparent;
+    }
+
+    .banner_title > h2{
+        font-size: 30px;
+        font-weight: 800;
+        letter-spacing:0;
+        letter-spacing: 0.2em;
+    }
+    
+    #product{
+        margin-top: 50px;
+    }
+
+    .item{
+        width: calc(100% / 2 - 30px);
+    }
+
+    h3, .more_pic{
+        font-size: 16px;
+
+    }
+
+    .text li{
+        font-size: 12px;
+
+    }
+}
